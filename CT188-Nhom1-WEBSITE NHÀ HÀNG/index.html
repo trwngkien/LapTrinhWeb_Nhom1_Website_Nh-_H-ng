@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Pizza Express</title>
+    <!-- Nhúng file CSS mẫu chung -->
+    <link rel="stylesheet" href="../CSS/data.css">
+    <!-- Nhúng file CSS riêng cho trang Index -->
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER & NAVIGATION (Đồng bộ 5 trang chính) -->
+        <header class="header">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Logo Pizza">
+                <span>Pizza Express</span>
+            </div>
+            
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html" class="active">Trang Chủ</a></li>
+                    <li><a href="menu.html">Thực Đơn</a></li>
+                    <li><a href="order.html">Đặt Hàng</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-links">
+                <a href="#store-locator">Store Locator</a> | 
+                <a href="#support">Support</a> | 
+                <a href="order.html" class="cart-link">🛒 CART (<span id="cart-count">2</span>)</a>
+            </div>
+        </header>
+
+        <!-- SUB-HEADER: TÌM KIẾM & ĐĂNG NHẬP / ĐĂNG KÝ TÍCH HỢP -->
+        <section class="sub-header">
+            <form class="search-form" action="menu.html" method="get">
+                <input type="text" name="keyword" placeholder="Nhập tên pizza bạn muốn tìm...">
+                <select name="category">
+                    <option value="all">Tất cả danh mục</option>
+                    <option value="pizza">Pizza Hải Sản</option>
+                    <option value="beef">Pizza Bò Thượng Hạng</option>
+                </select>
+                <button type="submit">SEARCH</button>
+            </form>
+
+            <div class="auth-box">
+                <details>
+                    <summary><strong>Đăng Nhập / Đăng Ký</strong></summary>
+                    <form action="#" method="post" class="login-register-form">
+                        <p class="form-note">Nhập email/SĐT. Hệ thống tự nhận diện tài khoản!</p>
+                        <label>Email hoặc SĐT: <input type="text" name="username" required></label>
+                        <label>Mật khẩu: <input type="password" name="password" required></label>
+                        <div class="form-actions">
+                            <button type="submit" name="action" value="login">Đăng Nhập</button>
+                            <button type="submit" name="action" value="register">Đăng Ký</button>
+                        </div>
+                    </form>
+                </details>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT: SIDEBAR DANH MỤC & BANNER QUẢNG CÁO -->
+        <main class="main-content">
+            <aside class="sidebar-categories">
+                <h3>Danh Mục Món Ăn</h3>
+                <ul>
+                    <li><a href="menu.html">Tất cả sản phẩm</a></li>
+                    <li><a href="menu.html">Pizza Hải Sản Sốt Majo</a></li>
+                    <li><a href="menu.html">Pizza Bò Băm Phô Mai</a></li>
+                    <li><a href="menu.html">Pizza Gà Nướng BBQ</a></li>
+                    <li><a href="menu.html">Mì Ý Sốt Kem Hải Sản</a></li>
+                    <li><a href="menu.html">Thức Uống & Tráng Miệng</a></li>
+                </ul>
+            </aside>
+
+            <section class="promo-banner">
+                <div class="slider-container">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Promotional Pizza Banner">
+                    <div class="banner-text">
+                        <h2>PIZZA NÓNG HỔI - GIAO HÀNG TRONG 30 PHÚT</h2>
+                        <p>Giảm giá 50% cho Pizza thứ 2 vào ngày hội viên!</p>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active">1</span>
+                    <span class="dot">2</span>
+                    <span class="dot">3</span>
+                    <span class="dot">4</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- TODAY'S SPECIALS: DANH SÁCH SẢN PHẨM NỔI BẬT -->
+        <section class="todays-specials">
+            <h2>Today's Specials</h2>
+            <div class="product-grid">
+                <!-- Sản phẩm 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza Hải Sản">
+                    <h3>Pizza Hải Sản Cao Cấp</h3>
+                    <p>Tôm, mực, thanh cua hòa quyện sốt mayonnaise béo ngậy.</p>
+                    <span class="price">189.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+                <!-- Sản phẩm 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Pizza Bò">
+                    <h3>Pizza Bò Nướng Philadelphia</h3>
+                    <p>Thịt bò thượng hạng kết hợp phô mai đậm đà.</p>
+                    <span class="price">175.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+                <!-- Sản phẩm 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e" alt="Pizza Pepperoni">
+                    <h3>Pizza Xúc Xích Ý (Pepperoni)</h3>
+                    <p>Xúc xích cay nồng chuẩn vị phong cách Ý truyền thống.</p>
+                    <span class="price">159.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+                <!-- Sản phẩm 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c" alt="Pizza Rau Củ">
+                    <h3>Pizza Rau Củ Thanh Đạm</h3>
+                    <p>Thích hợp cho người ăn chay, nhiều loại nấm và ớt chuông.</p>
+                    <span class="price">139.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+                <!-- Sản phẩm 5 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1595731113959-67d73f554dcb" alt="Pizza Phô Mai">
+                    <h3>Pizza 4 Loại Phô Mai</h3>
+                    <p>Ngập tràn phô mai Mozzarella kéo sợi thơm lừng.</p>
+                    <span class="price">199.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+                <!-- Sản phẩm 6 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee" alt="Pizza Gà">
+                    <h3>Pizza Gà Nướng Sốt BBQ</h3>
+                    <p>Thịt gà mềm mọng nước cùng sốt BBQ đậm vị khói.</p>
+                    <span class="price">169.000đ</span>
+                    <a href="order.html" class="btn-buy">Thêm vào giỏ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="about.html">Company</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Policies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SOCIAL</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Try our app</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SERVICE</h4>
+                <ul>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Live support</a></li>
+                    <li><a href="order.html">Tracking Order</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
